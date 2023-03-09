@@ -6,10 +6,11 @@ let player = {
   x: 100,
   y: canvas.height - 100,
   width: 50,
-  height: 50,
+  height: 59,
   speed: 5,
   score: 0,
-  lives: 3
+  lives: 5,
+  image : new Image()
 };
 
 const keys={right:false, left:false, up:false, down:false, space:false};
@@ -77,7 +78,7 @@ function movePlayer() {
   }
   function createEnemy() {
     // Create a new enemy object with random x and y positions and speed
-    if(enemies.length<20){
+    if(enemies.length<5){
 
         let enemy = {
             x: Math.floor(Math.random() * canvas.width),
@@ -148,7 +149,9 @@ function collides(obj1, obj2) {
   function drawPlayer() {
     // Draw the player as a rectangle
     ctx.fillStyle = "blue";
-    ctx.fillRect(player.x, player.y, player.width, player.height);
+    //ctx.fillRect(player.x, player.y, player.width, player.height);
+
+    ctx.drawImage(player.image, player.x, player.y, player.width, player.height)
   }
   
   function drawEnemies() {
@@ -260,4 +263,6 @@ function handleKeyPress(event) {
   document.addEventListener("keyup", handleKeyRelease);
   
 // Start the game loop
+player.image.src="assets/nave.png";
+
 requestAnimationFrame(gameLoop);
