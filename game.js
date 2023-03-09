@@ -158,8 +158,9 @@ function collides(obj1, obj2) {
     // Draw each enemy as a rectangle
     for (let i = 0; i < enemies.length; i++) {
       let enemy = enemies[i];
+     
       ctx.fillStyle = "red";
-      ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
+      ctx.drawImage(imageEnemy, enemy.x, enemy.y, enemy.width, enemy.height);
     }
   }
   function drawBullets() {
@@ -263,6 +264,8 @@ function handleKeyPress(event) {
   document.addEventListener("keyup", handleKeyRelease);
   
 // Start the game loop
+let imageEnemy = new Image();
+imageEnemy.src = "assets/enemy.png"
 player.image.src="assets/nave.png";
 
 requestAnimationFrame(gameLoop);
