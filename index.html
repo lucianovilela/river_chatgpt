@@ -1,16 +1,48 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>River Raid Game</title>
-    <style>
-      canvas {
-        border: 1px solid black;
-      }
-    </style>
-  </head>
-  <body>
-    <canvas id="canvas" width="800" height="600"></canvas>
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="A River Raid-style game where you control a plane and try to destroy enemy targets while avoiding collisions.">
+  <meta name="keywords" content="River Raid, game, plane, enemies, shoot, chat gtp">
+  <meta name="author" content="Luciano Vilela">
+  <!-- OG meta tags -->
+  <meta property="og:title" content="River Raid Game">
+  <meta property="og:type" content="game">
+  <meta property="og:url" content="http://www.example.com/river-raid-game.html">
+  <meta property="og:image" content="http://www.example.com/images/game-thumbnail.png">
+  <meta property="og:description"
+    content="A River Raid-style game where you control a plane and try to destroy enemy targets while avoiding collisions.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat GPT Game</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1>Um jogo muito simples criado 99% com Chat-GPT</h1>
+          <canvas id="canvas" width="800" height="600"></canvas>
+          <p>Use the arrow keys to move and spacebar to shoot. Destroy enemies to earn points and avoid crashing into
+            them to stay alive. Good luck!</p>
+        </div>
+      </div>
+    </div>
     <script src="game.js"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+  </div>
+</body>
+
 </html>
