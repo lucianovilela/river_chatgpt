@@ -306,11 +306,11 @@ document.addEventListener("keyup", handleKeyRelease);
 // Start the game loop
 
 let imageEnemy = [];
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 4; i++) {
   let img = new Image();
-  img.src = `assets/enemy${i + 1}.png`;
+  img.src = `assets/enemy1${i + 1}.png`;
   imageEnemy.push(img);
 }
-player.image.src = "assets/nave.png";
+player.image.src = "assets/nave1.png";
 
 requestAnimationFrame(gameLoop);
