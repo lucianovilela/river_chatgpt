@@ -12,11 +12,6 @@
     line-height: 1.5;
   }
   
-  .container {
-    display: flex; /* Set the container as a flex container */
-    justify-content: center; /* Center the child elements horizontally */
-    align-items: center; /* Center the child elements vertically */
-  }
   
 
   /* Style the heading elements */
